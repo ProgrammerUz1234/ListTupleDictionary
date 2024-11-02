@@ -159,6 +159,49 @@ print(tel1.get_tel())
 
 
 
+class Kutubxona():
+    def __init__(self, varaq2, narx2, nom2):
+        self.varaq2 = varaq2
+        self.narx2 = narx2
+        self.nom2 = nom2
+
+
+    def get_varaq2(self):
+        return self.varaq2
+
+
+
+
+class Kitob1(Kutubxona):
+
+    def get_narx2(self):
+        return self.narx2
+
+
+class Kitob2(Kitob1):
+
+    def get_nom2(self):
+        return self.nom2
+
+
+book1 = Kutubxona(360,150000,"Alpomish")
+book2 = Kutubxona(360,150000,"dfgd")
+book2 = Kutubxona(360,150000,"dfdsfgd")
+
+print(book1.get_varaq2())
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
